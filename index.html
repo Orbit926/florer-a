@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arlop Fiori · Florería Premium — Arreglos florales y boxes de rosas</title>
+  <meta name="description" content="Arlop Fiori: florería premium con boxes de rosas, bouquets, jardineras y arreglos florales. Pide rápido y fácil por WhatsApp. Entrega local." />
+  <meta name="keywords" content="florería, flores, rosas, box de rosas, bouquet, arreglos florales, Arlop Fiori" />
+  <meta name="author" content="Arlop Fiori" />
+  <meta name="theme-color" content="#fce7f3" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Arlop Fiori · Florería Premium" />
+  <meta property="og:description" content="Boxes de rosas, bouquets y arreglos florales premium. Pedidos directos por WhatsApp." />
+  <meta property="og:locale" content="es_ES" />
+
+  <link rel="canonical" href="/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blush: {
+              50:  '#fff5f7',
+              100: '#fde8ee',
+              200: '#fbd5e0',
+              300: '#f6b7c9',
+              400: '#ef8fab',
+              500: '#e26b90',
+              600: '#c64e75',
+              700: '#9e3d5c',
+            },
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans:  ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      background: linear-gradient(180deg, #fff5f7 0%, #fde8ee 100%);
+    }
+    .card-img {
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+    }
+
+    /* Animación de entrada del hero */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .hero-anim > * { opacity: 0; animation: fadeUp 0.9s cubic-bezier(.21,.65,.36,1) forwards; }
+    .hero-anim > *:nth-child(1) { animation-delay: 0.1s; }
+    .hero-anim > *:nth-child(2) { animation-delay: 0.25s; }
+    .hero-anim > *:nth-child(3) { animation-delay: 0.4s; }
+    .hero-anim > *:nth-child(4) { animation-delay: 0.55s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hero-anim > * { animation: none !important; opacity: 1 !important; transform: none !important; }
+    }
+  </style>
+
+  <!-- JSON-LD estructurado -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Florist",
+    "name": "Arlop Fiori",
+    "description": "Florería premium con boxes de rosas, bouquets y arreglos florales. Pedidos por WhatsApp.",
+    "image": "",
+    "telephone": "+52 1 33 3954 1634",
+    "sameAs": ["https://instagram.com/arlopfiori"]
+  }
+  </script>
+</head>
+<body class="font-sans text-blush-700 antialiased">
+
+  <!-- ====== HEADER ====== -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-blush-50/80 border-b border-blush-100">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between px-5 py-4" aria-label="Principal">
+      <a href="#" class="flex items-center gap-2">
+        <span class="text-2xl md:text-3xl font-serif font-semibold tracking-wide text-blush-700">Arlop <span class="italic text-blush-500">Fiori</span></span>
+      </a>
+      <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-blush-700/80">
+        <li><a href="#nosotros" class="hover:text-blush-600">Nosotros</a></li>
+        <li><a href="#productos" class="hover:text-blush-600">Productos</a></li>
+        <li><a href="#contacto" class="hover:text-blush-600">Contacto</a></li>
+        <li><a href="https://instagram.com/arlopfiori" target="_blank" rel="noopener" class="hover:text-blush-600">Instagram</a></li>
+      </ul>
+      <a
+        href="https://wa.me/5213339541634?text=Hola%20Arlop%20Fiori%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20acerca%20de%20sus%20productos"
+        target="_blank" rel="noopener"
+        class="inline-flex items-center gap-2 bg-blush-500 hover:bg-blush-600 text-white text-sm font-medium px-4 py-2 rounded-full shadow-sm transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.02 0C5.4 0 .02 5.38.02 12c0 2.12.56 4.17 1.63 5.98L0 24l6.2-1.63A11.95 11.95 0 0 0 12.02 24c6.62 0 12-5.38 12-12 0-3.2-1.25-6.22-3.5-8.52ZM12.02 22a9.94 9.94 0 0 1-5.07-1.39l-.36-.21-3.68.97.98-3.58-.24-.37A9.94 9.94 0 1 1 22 12c0 5.52-4.48 10-9.98 10Zm5.47-7.47c-.3-.15-1.77-.87-2.05-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.08-.3-.15-1.26-.46-2.4-1.48-.88-.78-1.48-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
+        Pedir ahora
+      </a>
+    </nav>
+  </header>
+
+  <!-- ====== HERO ====== -->
+  <!-- Imagen full-bleed con overlay oscuro en todas las vistas. -->
+  <section class="relative overflow-hidden min-h-screen flex items-center">
+    <!-- Mobile: imagen vertical | Desktop: imagen horizontal -->
+    <img
+      src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=900&q=70"
+      alt="Ramo de rosas rosa premium de Arlop Fiori"
+      loading="eager" decoding="async"
+      class="md:hidden absolute inset-0 w-full h-full object-cover" />
+    <img
+      src="https://images.unsplash.com/photo-1455659817273-f96807779a8a?auto=format&fit=crop&w=1920&q=70"
+      alt="Arreglo floral premium de Arlop Fiori"
+      loading="eager" decoding="async"
+      class="hidden md:block absolute inset-0 w-full h-full object-cover" />
+    <!-- Overlay oscuro -->
+    <div class="absolute inset-0 bg-black/55"></div>
+
+    <div class="relative max-w-6xl mx-auto px-5 py-20 md:py-24 w-full">
+      <div class="hero-anim text-center md:text-left text-white max-w-2xl md:mx-0 mx-auto">
+        <p class="uppercase tracking-[0.25em] text-xs text-white/80 mb-4">Florería premium</p>
+        <h1 class="font-serif text-4xl md:text-6xl leading-tight">
+          Flores que hablan <span class="italic text-blush-200">por ti</span>
+        </h1>
+        <p class="mt-5 text-white/90 text-base md:text-lg">
+          Boxes de rosas, bouquets, jardineras y arreglos florales diseñados a mano. Pide en segundos por WhatsApp y sorprende hoy mismo.
+        </p>
+        <div class="mt-8 flex flex-col md:flex-row md:flex-wrap gap-3 items-stretch md:items-center md:justify-start">
+          <a href="#productos"
+             class="inline-flex justify-center items-center gap-2 bg-blush-500 hover:bg-blush-600 text-white font-medium px-6 py-3 rounded-full shadow-sm transition">
+            Ver productos
+          </a>
+          <a href="https://wa.me/5213339541634?text=Hola%20Arlop%20Fiori%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20acerca%20de%20sus%20productos"
+             target="_blank" rel="noopener"
+             class="inline-flex justify-center items-center gap-2 border border-white/70 text-white hover:bg-white/10 font-medium px-6 py-3 rounded-full transition">
+            Hablar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ABOUT US ====== -->
+  <section id="nosotros" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+      <div class="relative order-2 md:order-1">
+        <div class="absolute -inset-6 bg-blush-200/50 rounded-[2rem] blur-2xl"></div>
+        <img
+          src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=900&q=70"
+          alt="Florista preparando un arreglo floral en Arlop Fiori"
+          loading="lazy" decoding="async"
+          class="relative rounded-[2rem] shadow-xl w-full object-cover aspect-[4/5]" />
+      </div>
+
+      <div class="order-1 md:order-2">
+        <p class="uppercase tracking-[0.25em] text-xs text-blush-500 mb-3">Sobre nosotros</p>
+        <h2 class="font-serif text-3xl md:text-5xl text-blush-700 leading-tight">
+          Detrás de cada flor, <span class="italic text-blush-500">una historia</span>
+        </h2>
+        <p class="mt-5 text-blush-700/80 text-base md:text-lg">
+          En <strong>Arlop Fiori</strong> creemos que las flores son el lenguaje más delicado para expresar lo que sentimos. Desde hace años acompañamos a nuestros clientes en sus momentos más importantes: aniversarios, cumpleaños, felicitaciones o ese "solo porque sí" que hace única una tarde.
+        </p>
+        <p class="mt-4 text-blush-700/80">
+          Seleccionamos cada tallo a mano, trabajamos con flores frescas del día y cuidamos cada detalle del empaque para que tu regalo llegue tan especial como la intención con la que lo enviaste.
+        </p>
+
+        <div class="grid grid-cols-3 gap-4 mt-8">
+          <div class="bg-white/70 backdrop-blur rounded-xl p-4 border border-blush-100 text-center">
+            <p class="font-serif text-2xl text-blush-600">+500</p>
+            <p class="text-xs text-blush-700/70 mt-1">Clientes felices</p>
+          </div>
+          <div class="bg-white/70 backdrop-blur rounded-xl p-4 border border-blush-100 text-center">
+            <p class="font-serif text-2xl text-blush-600">100%</p>
+            <p class="text-xs text-blush-700/70 mt-1">Flores frescas</p>
+          </div>
+          <div class="bg-white/70 backdrop-blur rounded-xl p-4 border border-blush-100 text-center">
+            <p class="font-serif text-2xl text-blush-600">24h</p>
+            <p class="text-xs text-blush-700/70 mt-1">Entrega local</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CÓMO PEDIR ====== -->
+  <section id="como-pedir" class="py-16 md:py-24 bg-white/50">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="text-center mb-12">
+        <p class="uppercase tracking-[0.25em] text-xs text-blush-500 mb-3">Pedir es muy fácil</p>
+        <h2 class="font-serif text-3xl md:text-5xl text-blush-700">¿Cómo hacer tu pedido?</h2>
+        <p class="mt-4 text-blush-700/70 max-w-xl mx-auto">En tres pasos tu detalle estará listo para sorprender.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white/80 backdrop-blur rounded-2xl p-7 text-center border border-blush-100 shadow-sm">
+          <div class="w-14 h-14 mx-auto rounded-full bg-blush-100 text-blush-600 flex items-center justify-center font-serif text-2xl">1</div>
+          <h3 class="mt-5 font-serif text-2xl text-blush-700">Elige tu arreglo</h3>
+          <p class="mt-2 text-blush-700/70 text-sm">Explora nuestro catálogo y encuentra el detalle perfecto para la ocasión.</p>
+        </div>
+        <div class="bg-white/80 backdrop-blur rounded-2xl p-7 text-center border border-blush-100 shadow-sm">
+          <div class="w-14 h-14 mx-auto rounded-full bg-blush-100 text-blush-600 flex items-center justify-center font-serif text-2xl">2</div>
+          <h3 class="mt-5 font-serif text-2xl text-blush-700">Escríbenos por WhatsApp</h3>
+          <p class="mt-2 text-blush-700/70 text-sm">Con un clic en el botón se abre WhatsApp con tu pedido listo para enviar.</p>
+        </div>
+        <div class="bg-white/80 backdrop-blur rounded-2xl p-7 text-center border border-blush-100 shadow-sm">
+          <div class="w-14 h-14 mx-auto rounded-full bg-blush-100 text-blush-600 flex items-center justify-center font-serif text-2xl">3</div>
+          <h3 class="mt-5 font-serif text-2xl text-blush-700">Recíbelo el mismo día</h3>
+          <p class="mt-2 text-blush-700/70 text-sm">Coordinamos entrega local o recoge en sucursal. Flores frescas, recién preparadas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PRODUCTOS POR CATEGORÍAS ====== -->
+  <section id="productos" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="text-center mb-12">
+        <p class="uppercase tracking-[0.25em] text-xs text-blush-500 mb-3">Catálogo</p>
+        <h2 class="font-serif text-3xl md:text-5xl text-blush-700">Nuestros productos</h2>
+        <p class="mt-4 text-blush-700/70 max-w-xl mx-auto">Cada arreglo se prepara el mismo día para garantizar frescura. Pide directo por WhatsApp.</p>
+      </div>
+
+      <div id="categorias-container" class="space-y-16 md:space-y-24"></div>
+    </div>
+  </section>
+
+  <!-- ====== OCASIONES ====== -->
+  <section id="ocasiones" class="py-16 md:py-24 bg-blush-100/60">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="text-center mb-12">
+        <p class="uppercase tracking-[0.25em] text-xs text-blush-500 mb-3">Para cada momento</p>
+        <h2 class="font-serif text-3xl md:text-5xl text-blush-700">¿Para qué ocasión?</h2>
+        <p class="mt-4 text-blush-700/70 max-w-xl mx-auto">No sabes qué elegir? Cuéntanos la ocasión y te ayudamos a encontrar el arreglo ideal.</p>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+        <a href="https://wa.me/5213339541634?text=Hola%20Arlop%20Fiori%2C%20busco%20un%20arreglo%20para%20un%20aniversario"
+           target="_blank" rel="noopener"
+           class="group relative rounded-2xl overflow-hidden aspect-[4/5] shadow-sm hover:shadow-lg transition">
+          <img src="https://images.unsplash.com/photo-1562690868-60bbe7293e94?auto=format&fit=crop&w=600&q=65" alt="Aniversario" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+            <h3 class="font-serif text-2xl">Aniversario</h3>
+            <p class="text-xs text-white/80 mt-1">Celebra el amor</p>
+          </div>
+        </a>
+        <a href="https://wa.me/5213339541634?text=Hola%20Arlop%20Fiori%2C%20busco%20un%20arreglo%20para%20un%20cumplea%C3%B1os"
+           target="_blank" rel="noopener"
+           class="group relative rounded-2xl overflow-hidden aspect-[4/5] shadow-sm hover:shadow-lg transition">
+          <img src="https://images.unsplash.com/photo-1591886960571-74d43a9d4166?auto=format&fit=crop&w=600&q=65" alt="Cumpleaños" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+            <h3 class="font-serif text-2xl">Cumpleaños</h3>
+            <p class="text-xs text-white/80 mt-1">Sorprende su día</p>
+          </div>
+        </a>
+        <a href="https://wa.me/5213339541634?text=Hola%20Arlop%20Fiori%2C%20busco%20un%20arreglo%20para%20pedir%20disculpas"
+           target="_blank" rel="noopener"
+           class="group relative rounded-2xl overflow-hidden aspect-[4/5] shadow-sm hover:shadow-lg transition">
+          <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=600&q=65" alt="Disculpas" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+            <h3 class="font-serif text-2xl">Disculpas</h3>
+            <p class="text-xs text-white/80 mt-1">Dilo con flores</p>
+          </div>
+        </a>
+        <a href="https://wa.me/5213339541634?text=Hola%20Arlop%20Fiori%2C%20busco%20un%20detalle%20%E2%80%9Csolo%20porque%20s%C3%AD%E2%80%9D"
+           target="_blank" rel="noopener"
+           class="group relative rounded-2xl overflow-hidden aspect-[4/5] shadow-sm hover:shadow-lg transition">
+          <img src="https://images.unsplash.com/photo-1455659817273-f96807779a8a?auto=format&fit=crop&w=600&q=65" alt="Solo porque sí" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+            <h3 class="font-serif text-2xl">Solo porque sí</h3>
+            <p class="text-xs text-white/80 mt-1">Sin razón, con amor</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== GALERÍA INSTAGRAM ====== -->
+  <section id="galeria" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="text-center mb-12">
+        <p class="uppercase tracking-[0.25em] text-xs text-blush-500 mb-3">Síguenos</p>
+        <h2 class="font-serif text-3xl md:text-5xl text-blush-700">@arlopfiori en Instagram</h2>
+        <p class="mt-4 text-blush-700/70 max-w-xl mx-auto">Mira nuestros últimos arreglos y déjate inspirar.</p>
+      </div>
+
+      <!-- Masonry con CSS columns: alturas variadas crean el efecto Pinterest -->
+      <div class="columns-2 md:columns-3 lg:columns-4 gap-3 md:gap-4 [column-fill:_balance]">
+        <a href="https://instagram.com/arlopfiori" target="_blank" rel="noopener" class="group block relative overflow-hidden rounded-xl mb-3 md:mb-4 break-inside-avoid">
+          <img src="https://images.unsplash.com/photo-1562690868-60bbe7293e94?auto=format&fit=crop&w=600&q=65" alt="Foto Instagram Arlop Fiori" loading="lazy" class="w-full h-auto aspect-[3/4] object-cover group-hover:scale-110 transition duration-500" />
+          <div class="absolute inset-0 bg-blush-500/0 group-hover:bg-blush-500/40 transition flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white opacity-0 group-hover:opacity-100 transition" viewBox="0 0 24 24" fill="currentColor"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5ZM12 7.25a4.75 4.75 0 1 1 0 9.5 4.75 4.75 0 0 1 0-9.5Zm0 1.5a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 0 0 0-6.5Zm5.13-2.38a1.12 1.12 0 1 1 0 2.25 1.12 1.12 0 0 1 0-2.25Z"/></svg>
+          </div>
+        </a>
+        <a href="https://instagram.com/arlopfiori" target="_blank" rel="noopener" class="group block relative overflow-hidden rounded-xl mb-3 md:mb-4 break-inside-avoid">
+          <img src="https://images.unsplash.com/photo-1591886960571-74d43a9d4166?auto=format&fit=crop&w=600&q=65" alt="Foto Instagram Arlop Fiori" loading="lazy" class="w-full h-auto aspect-square object-cover group-hover:scale-110 transition duration-500" />
+          <div class="absolute inset-0 bg-blush-500/0 group-hover:bg-blush-500/40 transition"></div>
+        </a>
+        <a href="https://instagram.com/arlopfiori" target="_blank" rel="noopener" class="group block relative overflow-hidden rounded-xl mb-3 md:mb-4 break-inside-avoid">
+          <img src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=600&q=65" alt="Foto Instagram Arlop Fiori" loading="lazy" class="w-full h-auto aspect-[4/5] object-cover group-hover:scale-110 transition duration-500" />
+          <div class="absolute inset-0 bg-blush-500/0 group-hover:bg-blush-500/40 transition"></div>
+        </a>
+        <a href="https://instagram.com/arlopfiori" target="_blank" rel="noopener" class="group block relative overflow-hidden rounded-xl mb-3 md:mb-4 break-inside-avoid">
+          <img src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?auto=format&fit=crop&w=600&q=65" alt="Foto Instagram Arlop Fiori" loading="lazy" class="w-full h-auto aspect-[3/2] object-cover group-hover:scale-110 transition duration-500" />
+          <div class="absolute inset-0 bg-blush-500/0 group-hover:bg-blush-500/40 transition"></div>
+        </a>
+        <a href="https://instagram.com/arlopfiori" target="_blank" rel="noopener" class="group block relative overflow-hidden rounded-xl mb-3 md:mb-4 break-inside-avoid">
+          <img src="https://images.unsplash.com/photo-1455659817273-f96807779a8a?auto=format&fit=crop&w=600&q=65" alt="Foto Instagram Arlop Fiori" loading="lazy" class="w-full h-auto aspect-square object-cover group-hover:scale-110 transition duration-500" />
+          <div class="absolute inset-0 bg-blush-500/0 group-hover:bg-blush-500/40 transition"></div>
+        </a>
+        <a href="https://instagram.com/arlopfiori" target="_blank" rel="noopener" class="group block relative overflow-hidden rounded-xl mb-3 md:mb-4 break-inside-avoid">
+          <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=600&q=65" alt="Foto Instagram Arlop Fiori" loading="lazy" class="w-full h-auto aspect-[4/5] object-cover group-hover:scale-110 transition duration-500" />
+          <div class="absolute inset-0 bg-blush-500/0 group-hover:bg-blush-500/40 transition"></div>
+        </a>
+        <a href="https://instagram.com/arlopfiori" target="_blank" rel="noopener" class="group block relative overflow-hidden rounded-xl mb-3 md:mb-4 break-inside-avoid">
+          <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=600&q=65" alt="Foto Instagram Arlop Fiori" loading="lazy" class="w-full h-auto aspect-[3/4] object-cover group-hover:scale-110 transition duration-500" />
+          <div class="absolute inset-0 bg-blush-500/0 group-hover:bg-blush-500/40 transition"></div>
+        </a>
+        <a href="https://instagram.com/arlopfiori" target="_blank" rel="noopener" class="group block relative overflow-hidden rounded-xl mb-3 md:mb-4 break-inside-avoid">
+          <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=600&q=65" alt="Foto Instagram Arlop Fiori" loading="lazy" class="w-full h-auto aspect-square object-cover group-hover:scale-110 transition duration-500" />
+          <div class="absolute inset-0 bg-blush-500/0 group-hover:bg-blush-500/40 transition"></div>
+        </a>
+      </div>
+
+      <div class="text-center mt-10">
+        <a href="https://instagram.com/arlopfiori" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 bg-blush-500 hover:bg-blush-600 text-white font-medium px-6 py-3 rounded-full transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5ZM12 7.25a4.75 4.75 0 1 1 0 9.5 4.75 4.75 0 0 1 0-9.5Zm0 1.5a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 0 0 0-6.5Zm5.13-2.38a1.12 1.12 0 1 1 0 2.25 1.12 1.12 0 0 1 0-2.25Z"/></svg>
+          Síguenos en Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FAQ ====== -->
+  <section id="faq" class="py-16 md:py-24 bg-white/50">
+    <div class="max-w-3xl mx-auto px-5">
+      <div class="text-center mb-12">
+        <p class="uppercase tracking-[0.25em] text-xs text-blush-500 mb-3">Preguntas frecuentes</p>
+        <h2 class="font-serif text-3xl md:text-5xl text-blush-700">¿Tienes dudas?</h2>
+      </div>
+
+      <div class="space-y-3">
+        <details class="group bg-white/80 rounded-2xl border border-blush-100 p-5 shadow-sm [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between cursor-pointer font-serif text-lg text-blush-700">
+            ¿Hacen entregas a domicilio?
+            <span class="text-blush-500 transition group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-blush-700/75 text-sm">Sí, contamos con servicio de entrega local el mismo día. Cotiza tu envío directo por WhatsApp indicándonos la zona.</p>
+        </details>
+
+        <details class="group bg-white/80 rounded-2xl border border-blush-100 p-5 shadow-sm [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between cursor-pointer font-serif text-lg text-blush-700">
+            ¿Qué métodos de pago aceptan?
+            <span class="text-blush-500 transition group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-blush-700/75 text-sm">Aceptamos efectivo, transferencia bancaria y pagos con tarjeta. Te compartimos los datos al confirmar tu pedido.</p>
+        </details>
+
+        <details class="group bg-white/80 rounded-2xl border border-blush-100 p-5 shadow-sm [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between cursor-pointer font-serif text-lg text-blush-700">
+            ¿Con cuánta anticipación debo pedir?
+            <span class="text-blush-500 transition group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-blush-700/75 text-sm">Para pedidos del mismo día te recomendamos escribirnos antes de las 2:00 pm. Para arreglos personalizados, idealmente con 24 horas.</p>
+        </details>
+
+        <details class="group bg-white/80 rounded-2xl border border-blush-100 p-5 shadow-sm [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between cursor-pointer font-serif text-lg text-blush-700">
+            ¿Hacen arreglos personalizados?
+            <span class="text-blush-500 transition group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-blush-700/75 text-sm">¡Por supuesto! Cuéntanos tu idea, presupuesto y ocasión por WhatsApp y te enviamos opciones a la medida.</p>
+        </details>
+
+        <details class="group bg-white/80 rounded-2xl border border-blush-100 p-5 shadow-sm [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between cursor-pointer font-serif text-lg text-blush-700">
+            ¿Cuál es su horario?
+            <span class="text-blush-500 transition group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-blush-700/75 text-sm">Atendemos de lunes a sábado de 9:00 am a 8:00 pm, y domingos de 10:00 am a 4:00 pm.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACTO ====== -->
+  <section id="contacto" class="py-16 md:py-24 bg-blush-100/60">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="text-center mb-12">
+        <p class="uppercase tracking-[0.25em] text-xs text-blush-500 mb-3">Visítanos</p>
+        <h2 class="font-serif text-3xl md:text-5xl text-blush-700">Nuestras sucursales</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <article class="bg-white/70 backdrop-blur rounded-2xl overflow-hidden shadow-sm border border-blush-100">
+          <img src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?auto=format&fit=crop&w=900&q=65"
+               alt="Fachada de la sucursal Centro de Arlop Fiori"
+               loading="lazy" decoding="async"
+               class="w-full aspect-[16/9] object-cover" />
+          <div class="p-7">
+            <h3 class="font-serif text-2xl text-blush-700 mb-2">Sucursal Centro</h3>
+            <p class="text-blush-700/80">Av. Principal 123, Local 4</p>
+            <p class="mt-2"><a href="tel:+5213339541634" class="text-blush-600 hover:underline">+52 1 33 3954 1634</a></p>
+            <a href="https://wa.me/5213339541634?text=Hola%20Arlop%20Fiori%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20acerca%20de%20sus%20productos" target="_blank" rel="noopener"
+               class="inline-block mt-4 text-sm font-medium bg-blush-500 hover:bg-blush-600 text-white px-4 py-2 rounded-full">WhatsApp</a>
+          </div>
+        </article>
+
+        <article class="bg-white/70 backdrop-blur rounded-2xl overflow-hidden shadow-sm border border-blush-100">
+          <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=65"
+               alt="Fachada de la sucursal Norte de Arlop Fiori"
+               loading="lazy" decoding="async"
+               class="w-full aspect-[16/9] object-cover" />
+          <div class="p-7">
+            <h3 class="font-serif text-2xl text-blush-700 mb-2">Sucursal Norte</h3>
+            <p class="text-blush-700/80">Calle Las Flores 456</p>
+            <p class="mt-2"><a href="tel:+5213339541634" class="text-blush-600 hover:underline">+52 1 33 3954 1634</a></p>
+            <a href="https://wa.me/5213339541634?text=Hola%20Arlop%20Fiori%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20acerca%20de%20sus%20productos" target="_blank" rel="noopener"
+               class="inline-block mt-4 text-sm font-medium bg-blush-500 hover:bg-blush-600 text-white px-4 py-2 rounded-full">WhatsApp</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="https://instagram.com/arlopfiori" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 text-blush-700 hover:text-blush-600 font-medium">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5ZM12 7.25a4.75 4.75 0 1 1 0 9.5 4.75 4.75 0 0 1 0-9.5Zm0 1.5a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 0 0 0-6.5Zm5.13-2.38a1.12 1.12 0 1 1 0 2.25 1.12 1.12 0 0 1 0-2.25Z"/></svg>
+          @arlopfiori
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="bg-blush-700 text-blush-100">
+    <div class="max-w-6xl mx-auto px-5 py-10 grid md:grid-cols-3 gap-8">
+      <div>
+        <p class="font-serif text-2xl text-white">Arlop <span class="italic">Fiori</span></p>
+        <p class="mt-3 text-sm text-blush-200/80">Florería premium. Arreglos florales elaborados con flores frescas del día.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-medium mb-3">Enlaces</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#productos" class="hover:text-white">Productos</a></li>
+          <li><a href="#contacto" class="hover:text-white">Contacto</a></li>
+          <li><a href="https://instagram.com/arlopfiori" target="_blank" rel="noopener" class="hover:text-white">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-medium mb-3">Contacto</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="https://wa.me/5213339541634?text=Hola%20Arlop%20Fiori%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20acerca%20de%20sus%20productos" target="_blank" rel="noopener" class="hover:text-white">WhatsApp: +52 1 33 3954 1634</a></li>
+          <li><a href="https://instagram.com/arlopfiori" target="_blank" rel="noopener" class="hover:text-white">@arlopfiori</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-blush-600/50">
+      <p class="text-center text-xs py-4 text-blush-200/70"> 2024 Arlop Fiori. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ====== DATA & RENDER ====== -->
+  <script>
+    // NOTA: reemplaza este número por el real de la florería (formato internacional sin +).
+    const WHATSAPP = "5213339541634";
+
+    const categorias = [
+      {
+        slug: "boxes",
+        titulo: "Boxes Empapelados",
+        descripcion: "Flores premium presentadas en empaque artesanal, perfectas para regalar elegancia.",
+        productos: [
+          { nombre: "Box Empapelado XL – Flor Premium", precio: "$7.000", msg: "Hola, me gustaría comprar el Box Empapelado XL – Flor Premium", img: "https://images.unsplash.com/photo-1591886960571-74d43a9d4166?auto=format&fit=crop&w=700&q=65" },
+          { nombre: "Box Empapelado XL – Rosas", precio: "$6.000", msg: "Hola, me gustaría comprar el Box Empapelado XL – Rosas", img: "https://images.unsplash.com/photo-1562690868-60bbe7293e94?auto=format&fit=crop&w=700&q=65" },
+          { nombre: "Box Empapelado Grande – Flor Premium", precio: "$5.000", msg: "Hola, me gustaría comprar el Box Empapelado Grande – Flor Premium", img: "https://images.unsplash.com/photo-1562690868-60bbe7293e94?auto=format&fit=crop&w=700&q=65" },
+          { nombre: "Box Empapelado Mediana – Mix Floral", precio: "$3.500", msg: "Hola, me gustaría comprar el Box Empapelado Mediana – Mix Floral", img: "https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=700&q=65" },
+        ],
+      },
+      {
+        slug: "jardineras",
+        titulo: "Jardineras",
+        descripcion: "Composiciones en base de madera con flores variadas, ideales como regalo duradero y decorativo.",
+        productos: [
+          { nombre: "Jardinera Doble", precio: "$2.500", msg: "Hola, me gustaría comprar la Jardinera Doble", img: "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=700&q=65" },
+          { nombre: "Jardinera Jumbo", precio: "$6.000", msg: "Hola, me gustaría comprar la Jardinera Jumbo", img: "https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=700&q=65" },
+        ],
+      },
+      {
+        slug: "bouquets",
+        titulo: "Bouquets",
+        descripcion: "Ramos clásicos, coreanos y de rosa inglesa, listos para entregar en mano.",
+        productos: [
+          { nombre: "Bouquet de 24 Rosas", precio: "$1.200", msg: "Hola, me gustaría comprar el Bouquet de 24 Rosas", img: "https://images.unsplash.com/photo-1562690868-60bbe7293e94?auto=format&fit=crop&w=700&q=65" },
+          { nombre: "Bouquet Coreano Flor Premium", precio: "$1.800", msg: "Hola, me gustaría comprar el Bouquet Coreano Flor Premium", img: "https://images.unsplash.com/photo-1591886960571-74d43a9d4166?auto=format&fit=crop&w=700&q=65" },
+          { nombre: "Bouquet de Rosa Inglesa", precio: "$1.800", msg: "Hola, me gustaría comprar el Bouquet de Rosa Inglesa", img: "https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=700&q=65" },
+        ],
+      },
+      {
+        slug: "arreglos",
+        titulo: "Arreglos, Mix Floral y Complementos",
+        descripcion: "Detalles únicos: canastas, jarrones, arreglos individuales y complementos para acompañar tu regalo.",
+        productos: [
+          { nombre: "Canasta Floral", precio: "$2.000 – $3.500", msg: "Hola, me gustaría comprar la Canasta Floral", img: "https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?auto=format&fit=crop&w=700&q=65" },
+          { nombre: "Mix Floral", precio: "Desde $700", msg: "Hola, me gustaría comprar el Mix Floral", img: "https://images.unsplash.com/photo-1455659817273-f96807779a8a?auto=format&fit=crop&w=700&q=65" },
+          { nombre: "Orquídea Individual", precio: "$950", msg: "Hola, me gustaría comprar la Orquídea Individual", img: "https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=700&q=65" },
+          { nombre: "Jarrón Flor Premium", precio: "$3.500", msg: "Hola, me gustaría comprar el Jarrón Flor Premium", img: "https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&fit=crop&w=700&q=65" },
+          { nombre: "Peluches", precio: "$250", msg: "Hola, me gustaría comprar un peluche", img: "https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&fit=crop&w=700&q=65" },
+        ],
+      },
+    ];
+
+    // Grid adaptativo: elige columnas y ancho según la cantidad de productos
+    const gridClassFor = (n) => {
+      if (n === 1) return "grid grid-cols-1 max-w-sm mx-auto";
+      if (n === 2) return "grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-3xl mx-auto";
+      if (n === 3) return "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8";
+      if (n === 4) return "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8";
+      return "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8";
+    };
+
+    const cardHTML = (p) => {
+      const url = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(p.msg)}`;
+      return `
+      <article class="group bg-white/80 backdrop-blur rounded-2xl overflow-hidden shadow-sm hover:shadow-lg border border-blush-100 transition">
+        <div class="overflow-hidden">
+          <img src="${p.img}" alt="${p.nombre} - Arlop Fiori"
+               loading="lazy" decoding="async"
+               class="card-img w-full group-hover:scale-105 transition duration-500" />
+        </div>
+        <div class="p-5">
+          <h3 class="font-serif text-xl text-blush-700 leading-snug">${p.nombre}</h3>
+          <p class="mt-1 text-blush-500 font-medium">${p.precio}</p>
+          <a href="${url}" target="_blank" rel="noopener"
+             class="mt-4 inline-flex items-center justify-center gap-2 w-full bg-blush-500 hover:bg-blush-600 text-white text-sm font-medium py-2.5 rounded-full transition">
+             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.02 0C5.4 0 .02 5.38.02 12c0 2.12.56 4.17 1.63 5.98L0 24l6.2-1.63A11.95 11.95 0 0 0 12.02 24c6.62 0 12-5.38 12-12 0-3.2-1.25-6.22-3.5-8.52ZM12.02 22a9.94 9.94 0 0 1-5.07-1.39l-.36-.21-3.68.97.98-3.58-.24-.37A9.94 9.94 0 1 1 22 12c0 5.52-4.48 10-9.98 10Z"/></svg>
+             Pedir por WhatsApp
+          </a>
+        </div>
+      </article>`;
+    };
+
+    const container = document.getElementById("categorias-container");
+    container.innerHTML = categorias.map(cat => `
+      <div id="cat-${cat.slug}" class="scroll-mt-24">
+        <div class="flex items-end justify-between flex-wrap gap-4 mb-8 border-b border-blush-200 pb-4">
+          <div>
+            <h3 class="font-serif text-2xl md:text-4xl text-blush-700">${cat.titulo}</h3>
+            <p class="mt-2 text-blush-700/70 max-w-2xl text-sm md:text-base">${cat.descripcion}</p>
+          </div>
+          <span class="text-xs uppercase tracking-[0.2em] text-blush-500">${cat.productos.length} ${cat.productos.length === 1 ? 'opción' : 'opciones'}</span>
+        </div>
+        <div class="${gridClassFor(cat.productos.length)}">
+          ${cat.productos.map(cardHTML).join("")}
+        </div>
+      </div>
+    `).join("");
+
+    document.getElementById("yr").textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/5213339541634?text=Hola%20Arlop%20Fiori%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20acerca%20de%20sus%20productos"
+     target="_blank" rel="noopener" aria-label="Contáctame por WhatsApp"
+     class="group fixed bottom-6 right-6 z-50 flex items-center gap-3">
+
+    <!-- Tooltip / banner -->
+    <span class="hidden md:inline-block opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 bg-neutral-700/90 text-white text-sm font-medium px-4 py-2 rounded-full shadow-md whitespace-nowrap">
+      Contáctame por WhatsApp
+    </span>
+
+    <!-- Círculo con ícono MUI WhatsApp -->
+    <span class="relative flex items-center justify-center w-14 h-14 rounded-full bg-blush-500 text-white shadow-lg hover:bg-blush-600 hover:shadow-xl transition">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M16.75 13.96c.25.13.41.2.46.3.06.11.04.61-.21 1.18-.2.56-1.24 1.1-1.7 1.13-.46.02-.47.36-2.96-.73-2.49-1.09-3.99-3.75-4.11-3.92-.12-.17-.96-1.38-.92-2.61.05-1.22.69-1.8.95-2.04.24-.26.51-.29.68-.27h.47c.15 0 .36-.06.55.42l.69 1.69c.06.13.1.28.01.44l-.27.41-.39.42c-.12.12-.25.26-.11.5.12.26.62 1.09 1.32 1.78.91.88 1.71 1.17 1.95 1.29.24.12.39.1.54-.04l.81-.94c.19-.25.35-.19.58-.11l1.67.88M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10c-1.97 0-3.8-.57-5.35-1.55L2 22l1.55-4.65A9.969 9.969 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8c0 1.72.54 3.31 1.46 4.61L4.5 19.5l2.89-.96A7.95 7.95 0 0 0 12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8z"/>
+      </svg>
+    </span>
+  </a>
+
+</body>
+</html>
